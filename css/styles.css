@@ -21,12 +21,27 @@
 html {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-    
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+}
 
 body {
     color: var(--primary-text-color);
@@ -55,6 +70,7 @@ adress {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    margin-left: 215px;
 }
 
 .accent {
@@ -75,7 +91,8 @@ adress {
 
 /*Header Site nav*/
 .page-header {
-    background-color: #ccc;
+    /*background-color: #ccc;*/
+    border-bottom: 1px solid #ECECEC;
 }
 
 .site-nav .link {
@@ -83,6 +100,9 @@ adress {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -113,7 +133,9 @@ adress {
     background-color: var(--secondary-background-color);
     text-align: center;
     margin-bottom: 94px;
+    height: 600px;
 }
+
 .hero-title {
     color: var(--text-color);
     font-weight: 900;
@@ -124,6 +146,7 @@ adress {
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 30px;
+    padding-top: 200px;
 }
 
 /*Buttons*/
@@ -152,6 +175,8 @@ adress {
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
+    min-width: 73px;
+    padding: 6px 22px;
 }
 
 .button.secondary {
@@ -163,6 +188,8 @@ adress {
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
+    min-width: 103px;
+    padding: 6px 22px;
 }
 
 .button.primary:hover,
@@ -182,13 +209,14 @@ adress {
     margin-top: 0;
     margin-bottom: 94px;
 }
+
 .section .title {
     margin-top: 0;
     margin-bottom: 10px;
     color: var(--primary-text-color);
     font-weight: 700;
     line-height: 1.14;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
 .section .post {
@@ -222,9 +250,15 @@ adress {
     background-color: var(--background-color);
 }
 
+.team-li {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-title {
     margin-top: 0;
     margin-bottom: 50px;
+    padding-top: 94px;
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -234,7 +268,7 @@ adress {
 
 .team-list .title {
     margin-top: 30px;
-    margin-bottom: 10px;    
+    margin-bottom: 0px;
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -243,13 +277,14 @@ adress {
 }
 
 .team-list .post {
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0;
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.18px;
+    line-height: 1.18;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 /*Portfolio*/
@@ -257,6 +292,11 @@ adress {
     margin-top: 94px;
     margin-bottom: 94px;
 }
+
+.work-list {
+    margin-top: 34px;
+}
+
 .work-list .title {
     margin-top: 20px;
     margin-bottom: 4px;
@@ -265,19 +305,29 @@ adress {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    text-align: center;
 }
+
 .work-list .post {
     margin-top: 0;
-    margin-bottom: 0;    
+    margin-bottom: 0;
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
+    text-align: center;
 }
 
 /*Footer*/
 .footer {
     background-color: var(--secondary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contact {
+    margin-top: 20px;
+    margin-left: 215px;
 }
 
 .contact .adres {
@@ -293,10 +343,13 @@ adress {
     font-weight: 400;
     line-height: 1.71;
 }
+
 /*Розмітка сторінки*/
-.container {    
-    width: 1200px;    
-    margin-left:auto ;
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
     margin-right: auto;
     outline: 2px solid tomato;
 }
