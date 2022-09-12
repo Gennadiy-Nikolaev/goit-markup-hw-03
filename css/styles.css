@@ -94,6 +94,10 @@ adress {
     /*background-color: #ccc;*/
     border-bottom: 1px solid #ECECEC;
     }
+.header-nav {
+        display: flex;
+        align-items: center;
+    }
 .main-nav {
     display: flex;
     align-items: center;
@@ -107,6 +111,12 @@ adress {
 
     .site-nav .item {
     margin-right: 50px;    
+    }
+    .auth-nav {
+        display: flex;             
+    }
+    .auth-nav .item + .item {
+        margin-left: 50px;
     }
     /*Очистити правий margin*/
     /*Примінити тільки для останнього*/
@@ -356,17 +366,23 @@ adress {
     padding-bottom: 30px;
 }
 
-/*Portfolio*/
-/*Кнопки*/
+/*Кнопки nav для Portfolio*/
 .work-nav {
     display: flex;
     justify-content: center;
 }
+.work-nav .item {
+    margin-right: 8px;
+}
+.work-nav .item:last-child {
+    margin-right: 0px;
+} 
+
+/*Portfolio*/
 .portfolio {
     margin-top: 94px;
     margin-bottom: 94px;
 }
-
 .work-list {
     display: flex;
     flex-wrap: wrap;
@@ -378,9 +394,9 @@ adress {
     border: 1px solid #EEEEEE;
 }
 .work-list .item {
-        /*margin: 20px 24px;*/
-        /*outline: 1px dotted aqua;*/
-        padding: 20px 24px;
+    /*margin: 20px 24px;*/
+    /*outline: 1px dotted aqua;*/
+    padding: 20px 24px;
 }
 
 .work-list .title {    
@@ -409,28 +425,27 @@ adress {
     padding-bottom: 60px;
     background-color: var(--secondary-background-color);
 }
-.adress-nav {   
-}
-
 .contact {
     margin-top: 20px;
-    outline: 1px dotted aqua;
 }
-
+.contact .item {
+    margin-bottom: 9px;
+}
+.contact .item:last-child {
+    margin-bottom: 0px;
+}
 .contact .adres {    
     color: var(--text-color);
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
 }
-
 .contact .link {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
 }
-
 /*Розмітка сторінки*/
 .container {
     margin-left: auto;
