@@ -112,7 +112,8 @@ adress {
     .site-nav .item {
     margin-right: 50px;    
     }
-    .auth-nav {
+    .auth-nav {display: flex;}
+    .auth-nav-li {
         display: flex;             
     }
     .auth-nav .item + .item {
