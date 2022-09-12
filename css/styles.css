@@ -89,7 +89,7 @@ adress {
     line-height: 1.2;
 }
 
-/*Header Site nav*/
+/*Header*/
 .page-header {
     /*background-color: #ccc;*/
     border-bottom: 1px solid #ECECEC;
@@ -103,7 +103,7 @@ adress {
     align-items: center;
     justify-content: center;
     }
-
+/* Site nav*/
 .site-nav {
     display: flex;
     margin-left: 93px;
@@ -112,7 +112,11 @@ adress {
     .site-nav .item {
     margin-right: 50px;    
     }
-    .auth-nav {display: flex;}
+  /*Auth-nav*/
+    .auth-nav {
+        display: flex;
+        margin-left: 344px;
+    }
     .auth-nav-li {
         display: flex;             
     }
