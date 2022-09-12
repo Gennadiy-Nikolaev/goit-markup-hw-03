@@ -105,17 +105,23 @@ adress {
     margin-left: 93px;
     }
 
-.site-nav .item {
+    .site-nav .item {
     margin-right: 50px;    
     }
     /*Очистити правий margin*/
+    /*Примінити тільки для останнього*/
     .site-nav .item:last-child {
-        margin-right: 0;
+        margin-right: 0px;
     }
-    /*.site-nav .item:not(:last-child) {
+    /*Не приміняти до останнього елемента списку 
+    .site-nav .item:not(:last-child) {
         margin-right: 50px;
-    }*/
-    
+    }
+     Примінити до всіх крім першого
+    .site-nav .item + .item {
+        margin-left: 50px;
+    }
+    */
 
 .site-nav .link {
         display: block;
@@ -246,6 +252,14 @@ adress {
 
 .section {
     display: flex;
+    justify-content: center;
+}
+.section .item {
+    margin-right: 30px;
+    outline: 1px solid tomato;
+}
+.section .item:last-child {
+    margin-right: 0px;
 }
 
 .section .title {
@@ -361,7 +375,7 @@ adress {
 }
 .work-list .li {
     /*outline: 1px solid red;*/
-    /*border: 1px solid #EEEEEE;*/
+    border: 1px solid #EEEEEE;
 }
 .work-list .item {
         /*margin: 20px 24px;*/
