@@ -16,6 +16,7 @@
     --background-color: #f5f4fa;
     --primary-background-color: #ffffff;
     --secondary-background-color: #2f303a;
+    --border-color: #eeeeee;
 }
 
 html {
@@ -95,8 +96,8 @@ adress {
     border-bottom: 1px solid #ECECEC;
     }
 .header-nav {
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
     }
 .main-nav {
     display: flex;
@@ -104,29 +105,18 @@ adress {
     justify-content: center;
     }
 /* Site nav*/
-.site-nav {
+    .site-nav {
     display: flex;
     margin-left: 93px;
     }
-
     .site-nav .item {
     margin-right: 50px;    
     }
-  /*Auth-nav*/
-    .auth-nav {
-        display: flex;
-        margin-left: 344px;
-    }
-    .auth-nav-li {
-        display: flex;             
-    }
-    .auth-nav .item + .item {
-        margin-left: 50px;
-    }
+  
     /*Очистити правий margin*/
     /*Примінити тільки для останнього*/
     .site-nav .item:last-child {
-        margin-right: 0px;
+    margin-right: 0px;
     }
     /*Не приміняти до останнього елемента списку 
     .site-nav .item:not(:last-child) {
@@ -139,15 +129,14 @@ adress {
     */
 
 .site-nav .link {
-        display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-        /*outline: 1px solid tomato;*/
-
-        color: var(--primary-text-color);
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;    
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+ /*outline: 1px solid tomato;*/
+    color: var(--primary-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;    
 }
 
 .site-nav .link:hover,
@@ -161,11 +150,14 @@ adress {
 }
 
 /*Mail+tel*/
-.auth-nav {
-   display: flex;
-   margin-left: auto;
+/*Auth-nav*/
+.auth-nav {    
+    margin-left: auto;
 }
-.auth-nav .item + .item {
+.auth-nav-li {
+    display: flex;
+}
+.auth-nav .item+.item {
     margin-left: 50px;
 }
 .auth-nav .link {
@@ -174,12 +166,10 @@ adress {
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-
 .auth-nav .link:hover,
 .auth-nav .link:focus {
     color: var(--accent-color);
 }
-
 /*Hero*/
 .hero {
     background-color: var(--secondary-background-color);
@@ -187,7 +177,6 @@ adress {
     margin-bottom: 94px;
     height: 600px;
 }
-
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
@@ -199,8 +188,7 @@ adress {
     line-height: 1.36;
     /*text-align: center;*/
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    
+    letter-spacing: 0.06em;    
 }
 
 /*Buttons*/
@@ -246,6 +234,9 @@ adress {
     min-width: 103px;
     padding: 6px 22px;
 }
+.button:active {
+    background-color: #188CE8;
+}
 
 .button.primary:hover,
 .button.primary:focus {
@@ -270,13 +261,11 @@ adress {
     justify-content: center;
 }
 .section .item {
-    margin-right: 30px;
-    outline: 1px solid tomato;
+    margin-right: 30px;    
 }
 .section .item:last-child {
     margin-right: 0px;
 }
-
 .section .title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -286,7 +275,6 @@ adress {
     line-height: 1.14;
     text-transform: uppercase;
 }
-
 .section .post {
     margin-top: 0;
     margin-bottom: 0;
@@ -305,7 +293,6 @@ adress {
     display: flex;
     justify-content: space-between;
 }
-
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -394,16 +381,15 @@ adress {
     gap: 30px;
     margin-top: 34px;
 }
-.work-list .li {
-    /*outline: 1px solid red;*/
-    border: 1px solid #EEEEEE;
+.work-li {
+    flex-basis: calc((100% - 60px) / 3);
 }
-.work-list .item {
-    /*margin: 20px 24px;*/
-    /*outline: 1px dotted aqua;*/
+.work-list .item {    
     padding: 20px 24px;
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
-
 .work-list .title {    
     margin-bottom: 4px;
     
@@ -455,8 +441,7 @@ adress {
 .container {
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
-    width: 1200px;
     padding-left: 15px;
-    padding-right: 15px;    
+    padding-right: 15px;
+    width: 1200px;
 }
