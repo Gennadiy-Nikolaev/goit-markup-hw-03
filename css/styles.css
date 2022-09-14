@@ -258,17 +258,17 @@ adress {
     padding-bottom: 94px; 
 }
 
-.section {
+.feature {
     display: flex;
     justify-content: center;
 }
-.section .item {
+.feature .item {
     margin-right: 30px;    
 }
-.section .item:last-child {
+.feature .item:last-child {
     margin-right: 0px;
 }
-.section .title {
+.feature .title {
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -277,7 +277,7 @@ adress {
     line-height: 1.14;
     text-transform: uppercase;
 }
-.section .post {
+.feature .post {
     margin-top: 0;
     margin-bottom: 0;
 
@@ -291,7 +291,7 @@ adress {
     margin-bottom: 94px;
     padding-top: 0;
 }
-.image-list {
+.box-list {
     display: flex;
     justify-content: space-between;
 }
@@ -319,13 +319,13 @@ adress {
     background-color: var(--background-color);
 }
 
-.team-list {
+.team-card {
     display: flex;
     justify-content: space-between;
     margin-bottom: 94px;
 }
 
-.team-li {
+.team-card .item {
     background-color: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -343,7 +343,7 @@ adress {
     text-align: center;
 }
 
-.team-list .title {
+.team-card .title {
     margin-top: 30px;
     margin-bottom: 0px;
 
@@ -354,7 +354,7 @@ adress {
     text-align: center;
 }
 
-.team-list .post {
+.team-card .post {
     margin-top: 10px;
     margin-bottom: 30px;
 
@@ -367,14 +367,14 @@ adress {
 }
 
 /*Кнопки nav для Portfolio*/
-.work-nav {
+.filter {
     display: flex;
     justify-content: center;
 }
-.work-nav .item {
+.filter .item {
     margin-right: 8px;
 }
-.work-nav .item:last-child {
+.filter .item:last-child {
     margin-right: 0px;
 } 
 
@@ -383,22 +383,22 @@ adress {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.work-list {
+.project {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 34px;
 }
-.work-li {
+.project-li {
     flex-basis: calc((100% - 60px) / 3);
 }
-.work-list .item {    
+.project .item {    
     padding: 20px 24px;
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
-.work-list .title {    
+.project .title {    
     margin-bottom: 4px;
     
     color: var(--primary-text-color);
@@ -408,7 +408,7 @@ adress {
     letter-spacing: 0.06em;    
 }
 
-.work-list .post {
+.project .post {
     margin-top: 0;
     margin-bottom: 0;
 
