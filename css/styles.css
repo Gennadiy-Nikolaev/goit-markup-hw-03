@@ -295,8 +295,7 @@ adress {
     display: flex;
     justify-content: space-between;
 }
-.section-title {
-    margin-top: 0;
+.section-title {    
     margin-bottom: 50px;
 
     color: var(--primary-text-color);
@@ -387,7 +386,7 @@ adress {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    margin-top: 34px;
+    margin-top: 50px;
 }
 .project-li {
     flex-basis: calc((100% - 60px) / 3);
