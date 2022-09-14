@@ -175,12 +175,15 @@ adress {
     background-color: var(--secondary-background-color);
     text-align: center;
     margin-bottom: 94px;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;   
 }
 .hero-title {
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 696px;    
 
     color: var(--text-color);
     font-weight: 900;
@@ -205,8 +208,7 @@ adress {
     letter-spacing: 0.06em;
     border-radius: 4px;
     padding: 10px 32px;
-    min-width: 216px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    min-width: 216px;    
 }
 
 .button.primary {
@@ -252,8 +254,8 @@ adress {
 
 /*Specifics*/
 .specifics {
-    margin-top: 0;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px; 
 }
 
 .section {
@@ -285,9 +287,9 @@ adress {
 }
 
 /*What do we do*/
-.image {    
-    margin-top: 0;
+.main-box {      
     margin-bottom: 94px;
+    padding-top: 0;
 }
 .image-list {
     display: flex;
@@ -302,6 +304,11 @@ adress {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+}
+.image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Our team*/
@@ -319,6 +326,7 @@ adress {
 }
 
 .team-li {
+    background-color: var(--primary-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -348,14 +356,14 @@ adress {
 
 .team-list .post {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    padding-bottom: 30px;
+    
 }
 
 /*Кнопки nav для Portfolio*/
@@ -372,8 +380,8 @@ adress {
 
 /*Portfolio*/
 .portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .work-list {
     display: flex;
